@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+#brk_yuan {
+    display: none !important;
+}
+
+body{
+    font-size: 100%;
+    background-color:#2F2325 !important;
+}
+
+main{
+    border-top: 0.4px solid#ecd6c4;
+    margin-bottom: 60px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin-top: 48px;
+    gap: 20px;
+}
+
+p{
+    display: flex;
+    flex-direction: column;
+    color: #ecd6c4;
+}
+
+label{
+    font-size: 25px;
+    color: #ecd6c4;
+}
+
+input{
+    width: 200px;
+    height: 30px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px !important;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+button{
+    background-color: #eb9d5e;
+    width: 150px;
+    height: 40px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px !important;
+    font-size: 24px !important;
+    color: #eeebec;
+}
+
+button:hover{
+    background-color: rgba(117, 112, 107, 0.53) !important;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 48px;
+}
+
+h3{
+    border-top: 0.4px solid #FFF2E7;
+    font-weight: 400;
+    font-size: 24px;
+    color:#ecd6c4 !important;
+    margin-bottom: 16px;
+}
+
+
+
+
