@@ -10,18 +10,21 @@
   
   <body>
     <header>
-      <?php include('navbar.php'); ?>
+      <?php include 'View/navbar.php'; ?>
     </header>
     
     <main>
         <form action="" method="POST">
-            <p>
+            <!-- <p>
                 <label for="">E-mail</label>
                 <input type="text" name="email">
             </p>
             <p>
                 <label for="">Senha</label>
                 <input type="password" name="senha">
+            </p> -->
+            <p>
+              <img src="https://png.pngtree.com/png-clipart/20230914/original/pngtree-farm-scene-vector-png-image_11242219.png" alt="">
             </p>
             <p>
                 <button type="submit">Entrar</button>
@@ -30,15 +33,15 @@
 
         <section>
           <h3>O que o sistema faz?</h3>
-          <p>1. Cadastra uma pessoa</p>
-          <p>2. Exibe os usuários cadastrados</p>
+          <p>1. Organiza as atividades</p>
+          <p>2. Controla o prazo</p>
           <p>3. Altera as informações</p>
           <p>4. Exclui os dados</p>
         </section>
     </main>
     
     <footer>
-      <?php include('footer.php'); ?>
+      <?php include 'View/footer.php'; ?>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
