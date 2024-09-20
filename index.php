@@ -33,10 +33,10 @@
 
         <section>
           <h3>O que o sistema faz?</h3>
-          <p>1. Organiza as atividades</p>
-          <p>2. Controla o prazo</p>
-          <p>3. Altera as informações</p>
-          <p>4. Exclui os dados</p>
+          <p><strong>Organiza as atividades:</strong> Mantém um registro claro e detalhado das tarefas da fazenda.</p>
+          <p><strong>Controla prazos:</strong> Gerencia os prazos de atividades e tarefas para garantir eficiência.</p>
+          <p><strong>Atualiza informações:</strong> Permite a modificação e atualização de dados conforme necessário.</p>
+          <p><strong>Remove dados:</strong> Exclui informações de forma segura.</p>
         </section>
     </main>
     
