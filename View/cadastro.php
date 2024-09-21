@@ -4,20 +4,19 @@
     require_once '../utilidades.php';
 
     if(isset($_POST['nome'], $_POST['cpf'], $_POST['cargo'], $_POST['telefone'], $_POST['nascimento'])){
-      $nome = $_POST['nome'];
-      $cpf = $_POST['cpf'];
-      $cargo = $_POST['cargo'];
-      $telefone = $_POST['telefone'];
-      $idade = $_POST['nascimento'];
+        $nome = $_POST['nome'];
+        $cpf = $_POST['cpf'];
+        $cargo = $_POST['cargo'];
+        $telefone = $_POST['telefone'];
+        $idade = $_POST['nascimento'];
 
-      $sql_code = "INSERT INTO responsavel (nome, cpf, telefone, idade, cargo) VALUE ('$nome', '$cpf', '$telefone', '$idade', '$cargo')";
-      $sql_query = $mysqli->query($sql_code);
+        $sql_query = $mysqli->query("INSERT INTO responsavel (nome, cpf, telefone, idade, cargo) VALUE ('$nome', '$cpf', '$telefone', '$idade', '$cargo')");
 
-      if($sql_query){
-        Utilidades::alert("Responsável cadastrado!");
-      } else{
-        Utilidades::alert("Erro ao cadastrar");
-      }
+        if($sql_query){
+            Utilidades::alert("Responsável cadastrado!");
+        } else{
+            Utilidades::alert("Erro ao cadastrar");
+        }
     }
 ?>
 
@@ -31,8 +30,7 @@
         $prioridade = $_POST['prioridade'];
         $descricao= $_POST['descricao'];
 
-        $sql_code = "INSERT INTO categoria (nome, prioridade, descricao) VALUE ('$name', '$prioridade', '$descricao')";
-        $sql_query = $mysqli->query($sql_code);
+        $sql_query = $mysqli->query("INSERT INTO categoria (nome, prioridade, descricao) VALUE ('$name', '$prioridade', '$descricao')");
 
         if($sql_query){
             utilidades::alert("Categoria cadastrada!");
@@ -104,7 +102,6 @@
                     
                     <label for="descricao">Descrição</label>                    
                     <textarea rows="6" style="width: 26em" id="descricao" name="descricao" required placeholder="Ex:  Envolve o plantio e manejo de diferentes tipos de culturas, como grãos, frutas, vegetais e ervas."></textarea>
-                    
                     <button class="botao" type="submit">Enviar</button> 
                 </form>
             </section>
