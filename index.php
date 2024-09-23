@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Crud</title>
+    <title>Início</title>
     <link rel="stylesheet" type="text/css" href="Style/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
@@ -14,30 +14,21 @@
     </header>
     
     <main>
-        <form action="" method="POST">
-            <!-- <p>
-                <label for="">E-mail</label>
-                <input type="text" name="email">
-            </p>
-            <p>
-                <label for="">Senha</label>
-                <input type="password" name="senha">
-            </p> -->
-            <p>
-              <img src="https://png.pngtree.com/png-clipart/20230914/original/pngtree-farm-scene-vector-png-image_11242219.png" alt="">
-            </p>
-            <p>
-                <button type="submit">Entrar</button>
-            </p>  
-        </form>
+      <section class="section1">
+        <div class="divi1">
+          <h1 class="titulo1">CHECKFARM</h1>
+          <h2 class="titulo2">Organize as atividades da sua equipe!</h2>
+          <button onclick="location.href='View/cadastro.php'">Começar</button>
+        </div> 
+        <img class="imagem1" src="https://png.pngtree.com/png-clipart/20230914/original/pngtree-farm-scene-vector-png-image_11242219.png" alt="">
+      </section>
 
-        <section>
-          <h3>O que o sistema faz?</h3>
-          <p><strong>Organiza as atividades:</strong> Mantém um registro claro e detalhado das tarefas da fazenda.</p>
-          <p><strong>Controla prazos:</strong> Gerencia os prazos de atividades e tarefas para garantir eficiência.</p>
-          <p><strong>Atualiza informações:</strong> Permite a modificação e atualização de dados conforme necessário.</p>
-          <p><strong>Remove dados:</strong> Exclui informações de forma segura.</p>
-        </section>
+      <section class="section2">
+        <h3 class="titulo3">O que o sistema faz?</h3>
+        <p><strong>Organiza as atividades:</strong>Mantém um registro claro e detalhado das tarefas da fazenda.</p>
+        <p><strong>Controla prazos:</strong> Gerencia os prazos de atividades e tarefas para garantir eficiência.</p>
+        <p><strong>Atualiza informações:</strong> Permite a modificação e atualização de dados conforme necessário.</p>
+      </section>
     </main>
     
     <footer>
