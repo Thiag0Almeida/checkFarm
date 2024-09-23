@@ -36,6 +36,7 @@
                         <th scope="col">Descrição</th>
                         <th scope="col">Data Criação</th>
                         <th scope="col">Status</th>
+                        <th scope="col">Data Status</th>
                         <th scope="col">Ações</th>
 
                     </tr>
@@ -43,7 +44,10 @@
                 <tbody>
                     <?php
                         $i = 1;
-                        while ($atividade = $query->fetch_assoc()) {
+                            
+                        // while ($atividade = $query->fetch_all()) {
+                        foreach ($query->fetch_all(MYSQLI_ASSOC) as $key => $atividade) {
+
                     ?>
                     <tr>
                         <th scope="row"><?= $i++ ?></th>
@@ -60,10 +64,34 @@
                         <td><?php echo $responsavel ?></td>
                         <td><?php echo $atividade['descricao']?></td>
                         <td><?php echo date("d/m/Y ", strtotime($atividade['data_criacao'])); ?></td>
-                        <td></td>
+                        <?php 
+                            $query = $mysqli->query("SELECT * FROM status WHERE id_fk_atividade = $atividade[id_atividade]");
+                            $code = $query->fetch_assoc();
+                            
+                            if($code != null){
+                                $status = $code['status_atual'];
+                                $data = $code['data_hora'];
+                            
+                            }else{
+                                $status = '';
+                                $data = '';
+                            }                            
+                        ?>
+                        <td><?php echo $status;?></td>
                         <td>
-                            <button style="width: 60%; margin-bottom: 1%;" onclick="location.href=''" class="btn btn-success">Editar</button>
-                            <button style="width: 60%;" class="btn btn-danger">Excluir</button>
+                            <?php 
+                            // Verifica se $data não está vazia
+                                if (!empty($data)) {
+                                    echo date("d/m H:i", strtotime($data));
+                                } else {
+                                    echo '';
+                                }
+                            ?>
+                        </td>
+                        <td>
+                            <button <?php if($status == 'Inicio' || $status == 'Finalizado') { ?> disabled <?php } ?> class="btn btn-success" style="width: 60%; margin-bottom: 1%;" onclick="location.href='updateStatus.php?id_atividade=<?= $atividade['id_atividade'];?> &action=iniciar'" >Iniciar</button>
+                            <button <?php if($status == 'Pausa' || $status == 'Finalizado') { ?> disabled <?php } ?> style="width: 60%; margin-bottom: 1%;" onclick="location.href='updateStatus.php?id_atividade=<?= $atividade['id_atividade'];?> &action=pausar'" class="btn btn-warning">Pausar</button>                    
+                            <button <?php if($status == 'Finalizado') { ?> disabled <?php } ?> style="width: 60%; margin-bottom: 1%;" onclick="location.href='updateStatus.php?id_atividade=<?= $atividade['id_atividade'];?> &action=final'" class="btn btn-danger">Finalizar</button>
                         </td>
                     </tr>
                     <?php
