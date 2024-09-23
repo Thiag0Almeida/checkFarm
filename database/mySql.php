@@ -2,7 +2,7 @@
     $host ="localhost";
     $user ="root";
     $pass = ""; 
-    $bd ="farm";
+    $bd ="fazenda";
 
     $mysqli = new mysqli($host, $user, $pass, $bd);
 
