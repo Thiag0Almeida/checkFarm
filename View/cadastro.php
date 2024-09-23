@@ -45,8 +45,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <link rel="stylesheet" type="text/css" href="../Style/navbar.css">
         <link rel="stylesheet" type="text/css" href="../Style/footer.css">
+        <link rel="stylesheet" type="text/css" href="../Style/cadastro.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        
         <title>Cadástro do Responsável</title>
     </head>
     <body>
@@ -56,14 +60,14 @@
         
         <main>
         <!-- cadastro do responsavel -->            
-            <section>
-                <div>
-                    <h1>Cadastro do Responsável</h1>
-                    <p>Complete as informações do prestador de serviço</p>
+            <section class="section2">
+                <div class="divi1">
+                    <h1 class="titulo1">Cadastro do Responsável</h1>
+                    <p class="subtitulo">Complete as informações do prestador de serviço</p>
                     <br>
                 </div>
                 
-                <form action="" method="POST">
+                <form class="form2" action="" method="POST">
                     <label for="nome">Nome</label>
                     <input type="text" name="nome" id="nome" required autocomplete="name">
                     <label for="nascimento">Data de nascimento</label>
@@ -73,21 +77,23 @@
                     <label for="telefone">Telefone</label>
                     <input type="tel" name="telefone" id="telefone" placeholder="(12)93456-7890" autocomplete="tel">
                     <label for="cargo">Cargo</label>
-                    <input type="text" name="cargo" id="cargo" required autocomplete="organization-title">
+                    <input style="width: 20em"  type="text" name="cargo" id="cargo" required autocomplete="organization-title">
+                    <!-- <textarea rows="6" style="width: 26em"  placeholder="Ex:  Envolve o plantio e manejo de diferentes tipos de culturas, como grãos, frutas, vegetais e ervas."></textarea> -->
+
                     
                     <button class="botao" type="submit">Enviar</button>   
                 </form>
             </section>
 
             <!-- cadastro da categoria -->
-            <section>
-                <div>
-                    <h2>Cadastro da Categoria</h2>
-                    <p>Crie uma categoria para as atividades na fazenda</p>
+            <section class="section2">
+                <div class="divi1">
+                    <h2 class="titulo1">Cadastro da Categoria</h2>
+                    <p class="subtitulo">Crie uma categoria para as atividades na fazenda</p>
                     <br>
                 </div>
 
-                <form action="" method="POST">
+                <form class="form2" action="" method="POST">
                     <label for="nome">Nome</label>
                     <input type="text" name="nome" id="nome" required placeholder = "Ex: Cultivo de Plantas">
                     
@@ -101,7 +107,7 @@
                     </select>
                     
                     <label for="descricao">Descrição</label>                    
-                    <textarea rows="6" style="width: 26em" id="descricao" name="descricao" required placeholder="Ex:  Envolve o plantio e manejo de diferentes tipos de culturas, como grãos, frutas, vegetais e ervas."></textarea>
+                    <textarea rows="6" style="width: 24em" id="descricao" name="descricao" required placeholder="Ex:  Envolve o plantio e manejo de diferentes tipos de culturas, como grãos, frutas, vegetais e ervas."></textarea>
                     <button class="botao" type="submit">Enviar</button> 
                 </form>
             </section>
