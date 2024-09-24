@@ -30,6 +30,7 @@
         
         <link rel="stylesheet" type="text/css" href="../Style/navbar.css">
         <link rel="stylesheet" type="text/css" href="../Style/footer.css">
+        <link rel="stylesheet" type="text/css" href="../Style/cadastroAtv.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         
         <title>Cria Atividade</title>
@@ -41,8 +42,8 @@
         <main>
             <section>
                 <div>
-                    <h1>Cadastro de Atividade</h1>
-                    <p>Cria a atividade que deseja iniciar</p>
+                    <h1 class="titulo">Cadastro de Atividade</h1>
+                    <p class="subtitulo">Cria a atividade que deseja iniciar</p>
                     <br>
                 </div>
                 <form action="" method="POST">

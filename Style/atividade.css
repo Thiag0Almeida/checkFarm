@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+#brk_yuan {
+    display: none !important;
+}
+
+body{
+    font-size: 100%;
+    background-color:#382a2d !important;
+}
+
+main{
+    border-top: 0.4px solid#ecd6c4;
+    margin-bottom: 60px;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; */
+}
+
+
+.titulo{
+    font-weight: 400;
+    font-size: 40px;
+    color: #FFF2E7;
+}
+
+th{
+    background-color:#FFF2E7 !important;
+}
+
+table{
+    padding: 15px !important;;
+}
