@@ -16,7 +16,7 @@
     <main>
       <section class="section1">
         <div class="divi1">
-          <h1 class="titulo1">CHECKFARM</h1>
+          <h1 class="titulo1">CHECKFARM NEW AGE</h1>
           <h2 class="titulo2">Organize as atividades da sua equipe!</h2>
           <button onclick="location.href='View/cadastro.php'">Começar</button>
         </div> 
